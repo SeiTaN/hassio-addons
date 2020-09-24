@@ -1,7 +1,9 @@
-## [0.1.16] - 2020-09-24
-### Changed
-- Allow any number of users - try not to overlap though!
-
+## [0.1.11] - 2020-09-24
+### Breaking Changes
+- Allow any amount of users to be configured (removes limit of three)
+- Users need to be added as a list (see config example)
+- All users must now provide a GT and LT value
+- Try not to overlap ranges - if you do it will pick the first one that matches
 
 ## [0.1.10] - 2020-09-09
 ### Changed
