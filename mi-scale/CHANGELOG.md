@@ -1,3 +1,8 @@
+## [0.1.14] - 2020-09-24
+### Changed
+- Allow any number of users - try not to overlap though!
+
+
 ## [0.1.10] - 2020-09-09
 ### Changed
 - Fixed issue with detection of boolean in MQTT_DISCOVERY (https://github.com/lolouk44/hassio-addons/issues/16 and https://github.com/lolouk44/xiaomi_mi_scale/issues/31)
