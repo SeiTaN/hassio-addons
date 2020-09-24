@@ -226,7 +226,7 @@ class ScanProcessor():
         height = matcheduser.HEIGHT
         age = self.GetAge(matcheduser.DOB)
         sex = matcheduser.SEX
-        namename = matcheduser.NAME
+        name = matcheduser.NAME
         
 
         lib = Xiaomi_Scale_Body_Metrics.bodyMetrics(calcweight, height, age, sex, 0)
@@ -252,9 +252,9 @@ class ScanProcessor():
         message += ',"timestamp":"' + mitdatetime + '"'
         message += '}'
         try:
-            sys.stdout.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - Publishing data to topic {MQTT_PREFIX + '/' + user + '/weight'}: {message}\n")
+            sys.stdout.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - Publishing data to topic {MQTT_PREFIX + '/' + name + '/weight'}: {message}\n")
             publish.single(
-                MQTT_PREFIX + '/' + namename + '/weight',
+                MQTT_PREFIX + '/' + name + '/weight',
                 message,
                 # qos=1, #Removed qos=1 as incorrect connection details will result in the client waiting for ack from broker
                 retain=True,

@@ -1,4 +1,4 @@
-## [0.1.14] - 2020-09-24
+## [0.1.16] - 2020-09-24
 ### Changed
 - Allow any number of users - try not to overlap though!
 
