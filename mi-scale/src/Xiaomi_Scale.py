@@ -12,6 +12,9 @@ from bluepy.btle import Scanner, BTLEDisconnectError, BTLEManagementError, Defau
 import paho.mqtt.publish as publish
 from datetime import datetime
 import json
+from types import SimpleNamespace
+from collections import namedtuple
+from json import JSONEncoder
 
 import Xiaomi_Scale_Body_Metrics
 
